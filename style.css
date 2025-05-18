@@ -4,6 +4,12 @@
     padding: 0;
 
 }
+@font-face {
+    font-family: Movie;
+    src: url('Font/Steudel.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
 
 .header{
 
@@ -13,6 +19,8 @@
     height: 10vh;
     background-color: #3f3f3f;
     display: flex;
+    font-size: 20px;
+    font-family: Movie, sans-serif;
 
 }
 .menu-toggle{
@@ -55,8 +63,9 @@
 }
 
 .nav a:hover, .nav_2 a:hover {
-    background-color: #555;
-    color: #ffcc00;
+    background-color: #313131;
+    border-radius: 10px;
+    color: #b0b0b0;
 }
 .nav li, .nav_2 li {
     list-style: none;
@@ -117,7 +126,7 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
+
 
     .menu-toggle{
 
