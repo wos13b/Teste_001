@@ -72,6 +72,11 @@ header{
     .hamburger{
         display: block;
     }
+    .nav-list{
+
+        position: fixed;
+
+    }
 
 }
 ul{
