@@ -48,6 +48,13 @@ header{
     font-size: 48px;
 
 }
+.hamburger{
+
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+
+}
 ul{
 
     list-style: none;
