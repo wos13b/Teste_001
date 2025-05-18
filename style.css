@@ -21,7 +21,7 @@
     color: #ffffff;
     height: 40px;
     width: 40px;
-    font-size: 22px;
+    font-size: 20px;
     border-radius: 12px;
     border: none;
     cursor: pointer;
@@ -36,12 +36,16 @@
 
 @media (max-width: 750px){
 
-    .hamburger{
-        display: block;
-    }
-    .nav-list{
 
-        position: fixed;
+    .header{
+
+        height: 8vh;
+
+    }
+    .menu-toggle{
+
+        height: 32px;
+        width: 32px;
 
     }
 
