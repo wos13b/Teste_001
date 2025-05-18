@@ -53,6 +53,16 @@ header{
     border: none;
     background: none;
     border-top: 3px solid #fff;
+    cursor: pointer;
+
+}
+.hamburger::after .hamburger::before{
+
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
 
 }
 ul{
