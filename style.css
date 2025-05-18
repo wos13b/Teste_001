@@ -67,6 +67,13 @@ header{
     margin-top: 5px;
 
 }
+@media (max-width: 750px){
+
+    .hamburger{
+        display: block;
+    }
+
+}
 ul{
 
     list-style: none;
