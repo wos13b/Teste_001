@@ -33,14 +33,19 @@
     transition: all 0.3s ease;
 
 }
-.nav {
+.menu-toggle:hover{
+
+    transform: scale(1.05);
+
+}
+.nav ,.nav_2 {
     display: flex;
     gap: 10px;
     align-items: center;
     margin: auto;
 }
 
-.nav a {
+.nav a,.nav_2 a {
     padding: 10px 16px;
     color: #ffffff;
     text-decoration: none;
@@ -49,15 +54,16 @@
     transition: color 0.3s, background-color 0.3s;
 }
 
-.nav a:hover {
+.nav a:hover, .nav_2 a:hover {
     background-color: #555;
     color: #ffcc00;
 }
-.nav li {
+.nav li, .nav_2 li {
     list-style: none;
 }
 
 .Log_perf {
+    cursor: pointer;
     position: relative;
     width: 45px;
     height: 45px;
@@ -71,6 +77,11 @@
     overflow: hidden;
     transition: transform 0.2s ease;
 }
+.Log_perf:hover{
+
+    transform: scale(1.05);
+
+}
 
 @media (max-width: 750px){
 
@@ -80,6 +91,34 @@
         height: 8vh;
 
     }
+    @media (max-width: 750px){
+    .nav_2 {
+        position: absolute;
+        top: 8vh;
+        right: 10px;
+        background-color: #3f3f3f;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        z-index: 100;
+
+        display: flex;
+        flex-direction: column;
+
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transform: translateY(-10px);
+        transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav_2.ativo {
+        max-height: 500px; /* altura grande o suficiente pro conteúdo */
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
     .menu-toggle{
 
         height: 32px;
