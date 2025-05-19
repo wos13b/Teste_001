@@ -10,6 +10,11 @@
     font-weight: 900;
     font-style: normal;
 }
+body{
+
+    background-color: black;
+
+}
 
 .header{
 
@@ -92,6 +97,42 @@
 
 }
 
+/* teste */
+
+.content{
+
+    display: flex;
+
+}
+
+.Conteudo{
+
+    background-color: #3f3f3fd3;
+    margin: 16vh auto;
+    height:100vh;
+    width:86%;
+    border-radius: 20px;
+
+}
+.Conteudo h1 {
+
+    text-align: center;
+    margin: 10px auto auto auto;
+
+}
+.Conteudo h2{
+
+    margin: 4px;
+
+}
+.Conteudo p{
+
+    text-align: justify;
+    margin: 4px;
+
+}
+
+
 @media (max-width: 750px){
 
 
@@ -100,7 +141,12 @@
         height: 8vh;
 
     }
-    @media (max-width: 750px){
+    .Conteudo{
+
+        margin: 10vh auto;
+        width: 92%;
+
+    }
     .nav_2 {
         position: absolute;
         top: 8vh;
@@ -140,10 +186,4 @@
         height: 32px;
 
     }
-
-}
-ul{
-
-    list-style: none;
-
 }
